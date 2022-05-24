@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConeCalculator.ConeVolume">
+
+    <TextView
+        android:id="@+id/txtCVCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cone Volume Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCVRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Radius"
+        app:layout_constraintStart_toStartOf="@+id/inputCVRadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtCVCalculator" />
+
+    <EditText
+        android:id="@+id/inputCVRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCVCalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCVCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCVCalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCVHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Height"
+        app:layout_constraintStart_toStartOf="@+id/inputCVHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCVRadius" />
+
+    <EditText
+        android:id="@+id/inputCVHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputCVRadius"
+        app:layout_constraintStart_toStartOf="@+id/inputCVRadius"
+        app:layout_constraintTop_toBottomOf="@+id/inputCVRadius"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCVAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cone Volume:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCVHeight"
+        app:layout_constraintStart_toStartOf="@+id/inputCVHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCVHeight" />
+
+    <Button
+        android:id="@+id/btnCVCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FFC107"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCVAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCVAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCVAnswer" />
+
+    <Button
+        android:id="@+id/btnCVBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCVCalculate"
+        app:layout_constraintStart_toStartOf="@+id/btnCVCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCVCalculate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

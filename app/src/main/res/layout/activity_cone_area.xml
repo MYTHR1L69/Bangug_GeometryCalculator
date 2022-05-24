@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConeCalculator.ConeArea">
+
+    <TextView
+        android:id="@+id/txtCACalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cone Area Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCARadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Radius"
+        app:layout_constraintStart_toStartOf="@+id/inputCARadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtCACalculator" />
+
+    <EditText
+        android:id="@+id/inputCARadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCACalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCACalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCACalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCAHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Height"
+        app:layout_constraintStart_toStartOf="@+id/inputCAHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCARadius" />
+
+    <EditText
+        android:id="@+id/inputCAHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputCARadius"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputCARadius"
+        app:layout_constraintTop_toBottomOf="@+id/inputCARadius"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCAAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cone Area:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCAHeight"
+        app:layout_constraintStart_toStartOf="@+id/inputCAHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCAHeight" />
+
+    <Button
+        android:id="@+id/btnCACalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FFC107"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCAAnswer"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/txtCAAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCAAnswer" />
+
+    <Button
+        android:id="@+id/btnCABack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCACalculate"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/btnCACalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCACalculate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

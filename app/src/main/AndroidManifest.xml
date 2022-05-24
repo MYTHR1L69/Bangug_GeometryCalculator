@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="mcm.edu.ph.bangug_geometrycalculator">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bangug_GeometryCalculator"
+        tools:targetApi="31">
+        <activity
+            android:name=".SphereCalculator.SphereVolume"
+            android:exported="false" />
+        <activity
+            android:name=".SphereCalculator.SphereArea"
+            android:exported="false" />
+        <activity
+            android:name=".CylinderCalculator.CylinderVolume"
+            android:exported="false" />
+        <activity
+            android:name=".CylinderCalculator.CylinderArea"
+            android:exported="false" />
+        <activity
+            android:name=".CubeCalculator.CubeVolume"
+            android:exported="false" />
+        <activity
+            android:name=".CubeCalculator.CubeArea"
+            android:exported="false" />
+        <activity
+            android:name=".ConeCalculator.ConeVolume"
+            android:exported="false" />
+        <activity
+            android:name=".ConeCalculator.ConeArea"
+            android:exported="false" />
+        <activity
+            android:name=".PyramidCalculator.PyramidVolume"
+            android:exported="false" />
+        <activity
+            android:name=".PyramidCalculator.PyramidArea"
+            android:exported="false" />
+        <activity
+            android:name=".Sphere"
+            android:exported="false" />
+        <activity
+            android:name=".Cube"
+            android:exported="false" />
+        <activity
+            android:name=".Cylinder"
+            android:exported="false" />
+        <activity
+            android:name=".Cone"
+            android:exported="false" />
+        <activity
+            android:name=".Pyramid"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
