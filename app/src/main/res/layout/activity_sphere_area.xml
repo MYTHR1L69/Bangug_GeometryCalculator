@@ -6,4 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".SphereCalculator.SphereArea">
 
+    <TextView
+        android:id="@+id/txtSACalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Sphere Area Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSARadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Radius"
+        app:layout_constraintStart_toStartOf="@+id/inputSARadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtSACalculator" />
+
+    <EditText
+        android:id="@+id/inputSARadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSACalculator"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSACalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtSACalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtSAAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Sphere Area:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputSARadius"
+        app:layout_constraintStart_toStartOf="@+id/inputSARadius"
+        app:layout_constraintTop_toBottomOf="@+id/inputSARadius" />
+
+    <Button
+        android:id="@+id/btnSACalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#2196F3"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtSAAnswer"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/txtSAAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtSAAnswer" />
+
+    <Button
+        android:id="@+id/btnSABack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnSACalculate"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/btnSACalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnSACalculate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

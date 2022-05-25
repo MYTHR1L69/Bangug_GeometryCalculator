@@ -6,4 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".Cube">
 
+    <TextView
+        android:id="@+id/txtCube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Cube"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCubeArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#FF5722"
+        android:text="Area"
+        app:layout_constraintEnd_toEndOf="@+id/txtCube"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/txtCube"
+        app:layout_constraintTop_toBottomOf="@+id/txtCube" />
+
+    <Button
+        android:id="@+id/btnCubeVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF5722"
+        android:text="Volume"
+        app:layout_constraintEnd_toEndOf="@+id/btnCubeArea"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/btnCubeArea"
+        app:layout_constraintTop_toBottomOf="@+id/btnCubeArea" />
+
+    <Button
+        android:id="@+id/btnCubeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCubeVolume"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/btnCubeVolume"
+        app:layout_constraintTop_toBottomOf="@+id/btnCubeVolume" />
 </androidx.constraintlayout.widget.ConstraintLayout>

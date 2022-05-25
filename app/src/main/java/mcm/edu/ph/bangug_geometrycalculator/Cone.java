@@ -40,16 +40,16 @@ public class Cone extends AppCompatActivity implements View.OnClickListener {
         switch (v.getId()){
 
             case R.id.btnConeArea:
-                Intent ConeArea = new Intent(this, ConeArea.class);
-                startActivity(ConeArea);
+                Intent coneArea = new Intent(this, ConeArea.class);
+                startActivity(coneArea);
                 break;
             case R.id.btnConeVolume:
-                Intent ConeVolume = new Intent(this, ConeVolume.class);
-                startActivity(ConeVolume);
+                Intent coneVolume = new Intent(this, ConeVolume.class);
+                startActivity(coneVolume);
                 break;
             case R.id.btnConeBack:
-                Intent ConeBack = new Intent(this, MainActivity.class);
-                startActivity(ConeBack);
+                Intent coneBack = new Intent(this, MainActivity.class);
+                startActivity(coneBack);
                 break;
         }
     }

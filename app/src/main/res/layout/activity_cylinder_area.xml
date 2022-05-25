@@ -6,4 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".CylinderCalculator.CylinderArea">
 
+    <TextView
+        android:id="@+id/txtCyACalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cylinder Area Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCyARadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Radius"
+        app:layout_constraintStart_toStartOf="@+id/inputCyARadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtCyACalculator" />
+
+    <EditText
+        android:id="@+id/inputCyARadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCyACalculator"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/txtCyACalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCyACalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCyAHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Height"
+        app:layout_constraintStart_toStartOf="@+id/inputCyAHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCyARadius" />
+
+    <EditText
+        android:id="@+id/inputCyAHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputCyARadius"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputCyARadius"
+        app:layout_constraintTop_toBottomOf="@+id/inputCyARadius"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCyAAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cylinder Area:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCyAHeight"
+        app:layout_constraintStart_toStartOf="@+id/inputCyAHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCyAHeight" />
+
+    <Button
+        android:id="@+id/btnCyACalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Calculate"
+        android:backgroundTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/txtCyAAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCyAAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCyAAnswer" />
+
+    <Button
+        android:id="@+id/btnCyABack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCyACalculate"
+        app:layout_constraintStart_toStartOf="@+id/btnCyACalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCyACalculate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

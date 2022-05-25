@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".CubeCalculator.CubeVolume">
 
+    <TextView
+        android:id="@+id/txtCuVCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cube Volume Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCuVEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Edge"
+        app:layout_constraintStart_toStartOf="@+id/inputCuVEdge"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuVCalculator" />
+
+    <EditText
+        android:id="@+id/inputCuVEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCuVCalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCuVCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuVCalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCuVAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cube Volume:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCuVEdge"
+        app:layout_constraintStart_toStartOf="@+id/inputCuVEdge"
+        app:layout_constraintTop_toBottomOf="@+id/inputCuVEdge" />
+
+    <Button
+        android:id="@+id/btnCuVCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FF5722"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCuVAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCuVAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuVAnswer" />
+
+    <Button
+        android:id="@+id/btnCuVBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCuVCalculate"
+        app:layout_constraintStart_toStartOf="@+id/btnCuVCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCuVCalculate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

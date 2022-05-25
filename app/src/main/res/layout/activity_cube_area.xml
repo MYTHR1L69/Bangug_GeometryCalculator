@@ -6,4 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".CubeCalculator.CubeArea">
 
+    <TextView
+        android:id="@+id/txtCuACalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cube Area Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCuAEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Edge"
+        app:layout_constraintStart_toStartOf="@+id/inputCuAEdge"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuACalculator" />
+
+    <EditText
+        android:id="@+id/inputCuAEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCuACalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCuACalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuACalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCuAAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cube Area:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCuAEdge"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/inputCuAEdge"
+        app:layout_constraintTop_toBottomOf="@+id/inputCuAEdge" />
+
+    <Button
+        android:id="@+id/btnCuACalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FF5722"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCuAAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCuAAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuAAnswer" />
+
+    <Button
+        android:id="@+id/btnCuABack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCuACalculate"
+        app:layout_constraintStart_toStartOf="@+id/btnCuACalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCuACalculate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

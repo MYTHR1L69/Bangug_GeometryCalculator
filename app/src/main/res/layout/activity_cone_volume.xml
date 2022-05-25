@@ -7,7 +7,7 @@
     tools:context=".ConeCalculator.ConeVolume">
 
     <TextView
-        android:id="@+id/txtCVCalculator"
+        android:id="@+id/txtCoVCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -20,81 +20,82 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtCVRadius"
+        android:id="@+id/txtCoVRadius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="44dp"
         android:text="Radius"
-        app:layout_constraintStart_toStartOf="@+id/inputCVRadius"
-        app:layout_constraintTop_toBottomOf="@+id/txtCVCalculator" />
+        app:layout_constraintStart_toStartOf="@+id/inputCoVRadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoVCalculator" />
 
     <EditText
-        android:id="@+id/inputCVRadius"
+        android:id="@+id/inputCoVRadius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtCVCalculator"
-        app:layout_constraintStart_toStartOf="@+id/txtCVCalculator"
-        app:layout_constraintTop_toBottomOf="@+id/txtCVCalculator"
+        app:layout_constraintEnd_toEndOf="@+id/txtCoVCalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCoVCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoVCalculator"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/txtCVHeight"
+        android:id="@+id/txtCoVHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:text="Height"
-        app:layout_constraintStart_toStartOf="@+id/inputCVHeight"
-        app:layout_constraintTop_toBottomOf="@+id/inputCVRadius" />
+        app:layout_constraintStart_toStartOf="@+id/inputCoVHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCoVRadius" />
 
     <EditText
-        android:id="@+id/inputCVHeight"
+        android:id="@+id/inputCoVHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/inputCVRadius"
-        app:layout_constraintStart_toStartOf="@+id/inputCVRadius"
-        app:layout_constraintTop_toBottomOf="@+id/inputCVRadius"
+        app:layout_constraintEnd_toEndOf="@+id/inputCoVRadius"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputCoVRadius"
+        app:layout_constraintTop_toBottomOf="@+id/inputCoVRadius"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/txtCVAnswer"
+        android:id="@+id/txtCoVAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="Cone Volume:"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/inputCVHeight"
-        app:layout_constraintStart_toStartOf="@+id/inputCVHeight"
-        app:layout_constraintTop_toBottomOf="@+id/inputCVHeight" />
+        app:layout_constraintEnd_toEndOf="@+id/inputCoVHeight"
+        app:layout_constraintStart_toStartOf="@+id/inputCoVHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCoVHeight" />
 
     <Button
-        android:id="@+id/btnCVCalculate"
+        android:id="@+id/btnCoVCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:backgroundTint="#FFC107"
         android:text="Calculate"
-        app:layout_constraintEnd_toEndOf="@+id/txtCVAnswer"
-        app:layout_constraintStart_toStartOf="@+id/txtCVAnswer"
-        app:layout_constraintTop_toBottomOf="@+id/txtCVAnswer" />
+        app:layout_constraintEnd_toEndOf="@+id/txtCoVAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCoVAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCoVAnswer" />
 
     <Button
-        android:id="@+id/btnCVBack"
+        android:id="@+id/btnCoVBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="#FF0000"
         android:text="Back"
-        app:layout_constraintEnd_toEndOf="@+id/btnCVCalculate"
-        app:layout_constraintStart_toStartOf="@+id/btnCVCalculate"
-        app:layout_constraintTop_toBottomOf="@+id/btnCVCalculate" />
+        app:layout_constraintEnd_toEndOf="@+id/btnCoVCalculate"
+        app:layout_constraintStart_toStartOf="@+id/btnCoVCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCoVCalculate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

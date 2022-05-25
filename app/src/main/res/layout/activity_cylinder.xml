@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Cylinder">
 
+    <TextView
+        android:id="@+id/txtCylinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Cylinder"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCylinderArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#E91E63"
+        android:text="Area"
+        app:layout_constraintEnd_toEndOf="@+id/txtCylinder"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/txtCylinder"
+        app:layout_constraintTop_toBottomOf="@+id/txtCylinder" />
+
+    <Button
+        android:id="@+id/btnCylinderVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E91E63"
+        android:text="Volume"
+        app:layout_constraintEnd_toEndOf="@+id/btnCylinderArea"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/btnCylinderArea"
+        app:layout_constraintTop_toBottomOf="@+id/btnCylinderArea" />
+
+    <Button
+        android:id="@+id/btnCylinderBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCylinderVolume"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/btnCylinderVolume"
+        app:layout_constraintTop_toBottomOf="@+id/btnCylinderVolume" />
 </androidx.constraintlayout.widget.ConstraintLayout>

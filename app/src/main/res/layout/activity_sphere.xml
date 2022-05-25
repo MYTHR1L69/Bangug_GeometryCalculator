@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Sphere">
 
+    <TextView
+        android:id="@+id/txtSphere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Sphere"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSphereArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#2196F3"
+        android:text="Area"
+        app:layout_constraintEnd_toEndOf="@+id/txtSphere"
+        app:layout_constraintStart_toStartOf="@+id/txtSphere"
+        app:layout_constraintTop_toBottomOf="@+id/txtSphere" />
+
+    <Button
+        android:id="@+id/btnSphereVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#2196F3"
+        android:text="Volume"
+        app:layout_constraintEnd_toEndOf="@+id/btnSphereArea"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/btnSphereArea"
+        app:layout_constraintTop_toBottomOf="@+id/btnSphereArea" />
+
+    <Button
+        android:id="@+id/btnSphereBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnSphereVolume"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/btnSphereVolume"
+        app:layout_constraintTop_toBottomOf="@+id/btnSphereVolume" />
 </androidx.constraintlayout.widget.ConstraintLayout>

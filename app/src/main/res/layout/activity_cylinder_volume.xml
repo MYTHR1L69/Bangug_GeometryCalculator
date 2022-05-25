@@ -6,4 +6,98 @@
     android:layout_height="match_parent"
     tools:context=".CylinderCalculator.CylinderVolume">
 
+    <TextView
+        android:id="@+id/txtCyVCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cylinder Volume Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCyVRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Radius"
+        app:layout_constraintStart_toStartOf="@+id/inputCyVRadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtCyVCalculator" />
+
+    <EditText
+        android:id="@+id/inputCyVRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCyVCalculator"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/txtCyVCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCyVCalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCyVHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Height"
+        app:layout_constraintStart_toStartOf="@+id/inputCyVHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCyVRadius" />
+
+    <EditText
+        android:id="@+id/inputCyVHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputCyVRadius"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputCyVRadius"
+        app:layout_constraintTop_toBottomOf="@+id/inputCyVRadius"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCyVAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cone Volume:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCyVHeight"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/inputCyVHeight"
+        app:layout_constraintTop_toBottomOf="@+id/inputCyVHeight" />
+
+    <Button
+        android:id="@+id/btnCyVCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#E91E63"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCyVAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCyVAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCyVAnswer" />
+
+    <Button
+        android:id="@+id/btnCyVBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF0000"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCyVCalculate"
+        app:layout_constraintStart_toStartOf="@+id/btnCyVCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCyVCalculate" />
 </androidx.constraintlayout.widget.ConstraintLayout>

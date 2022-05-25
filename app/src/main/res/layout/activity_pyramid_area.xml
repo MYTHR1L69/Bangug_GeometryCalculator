@@ -109,7 +109,6 @@
         android:backgroundTint="#4CAF50"
         android:text="Calculate"
         app:layout_constraintEnd_toEndOf="@+id/txtPAAnswer"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/txtPAAnswer"
         app:layout_constraintTop_toBottomOf="@+id/txtPAAnswer" />
 

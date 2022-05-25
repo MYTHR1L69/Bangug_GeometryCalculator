@@ -7,13 +7,19 @@
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cone_area.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cone_volume.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cube.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cube_area.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cube_volume.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cylinder.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cylinder_area.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cylinder_arera.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_cylinder_volume.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_pyramid.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_pyramid_area.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_pyramid_volume.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_sphere.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_sphere_area.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/emmanuel/AndroidStudioProjects/Bangug_GeometryCalculator/app/src/main/res/layout/activity_sphere_volume.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

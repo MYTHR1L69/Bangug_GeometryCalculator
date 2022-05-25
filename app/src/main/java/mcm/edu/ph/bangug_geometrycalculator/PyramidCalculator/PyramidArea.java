@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import mcm.edu.ph.bangug_geometrycalculator.Pyramid;
 import mcm.edu.ph.bangug_geometrycalculator.R;
-import mcm.edu.ph.bangug_geometrycalculator.*;
+import mcm.edu.ph.bangug_geometrycalculator.ShapeFormulas;
 
 public class PyramidArea extends AppCompatActivity implements View.OnClickListener {
 

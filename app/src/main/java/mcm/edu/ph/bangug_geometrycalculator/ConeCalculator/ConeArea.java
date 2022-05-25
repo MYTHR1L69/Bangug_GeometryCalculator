@@ -15,9 +15,9 @@ import mcm.edu.ph.bangug_geometrycalculator.ShapeFormulas;
 
 public class ConeArea extends AppCompatActivity implements View.OnClickListener {
 
-    TextView txtCACalculator, txtCARadius, txtCAHeight, txtCAAnswer;
-    EditText inputCARadius, inputCAHeight;
-    Button btnCACalculate, btnCABack;
+    TextView txtCoACalculator, txtCoARadius, txtCoAHeight, txtCoAAnswer;
+    EditText inputCoARadius, inputCoAHeight;
+    Button btnCoACalculate, btnCoABack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,38 +25,38 @@ public class ConeArea extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_cone_area);
 
         //xml IDs for text views
-        txtCACalculator = findViewById(R.id.txtCACalculator);
-        txtCARadius = findViewById(R.id.txtCARadius);
-        txtCAHeight = findViewById(R.id.txtCAHeight);
-        txtCAAnswer = findViewById(R.id.txtCAAnswer);
+        txtCoACalculator = findViewById(R.id.txtCoACalculator);
+        txtCoARadius = findViewById(R.id.txtCoARadius);
+        txtCoAHeight = findViewById(R.id.txtCoAHeight);
+        txtCoAAnswer = findViewById(R.id.txtCoAAnswer);
 
         //xml IDs for edit texts
-        inputCARadius = findViewById(R.id.inputCARadius);
-        inputCAHeight = findViewById(R.id.inputCAHeight);
+        inputCoARadius = findViewById(R.id.inputCoARadius);
+        inputCoAHeight = findViewById(R.id.inputCoAHeight);
 
         //xml IDs for buttons
-        btnCACalculate = findViewById(R.id.btnCACalculate);
-        btnCABack = findViewById(R.id.btnCABack);
+        btnCoACalculate = findViewById(R.id.btnCoACalculate);
+        btnCoABack = findViewById(R.id.btnCoABack);
 
         //On click listeners for buttons
-        btnCACalculate.setOnClickListener(this);
-        btnCABack.setOnClickListener(this);
+        btnCoACalculate.setOnClickListener(this);
+        btnCoABack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v){
 
-        double radius = Double.parseDouble(String.valueOf(inputCARadius.getText()));
-        double height = Double.parseDouble(String.valueOf(inputCAHeight.getText()));
+        double radius = Double.parseDouble(String.valueOf(inputCoARadius.getText()));
+        double height = Double.parseDouble(String.valueOf(inputCoAHeight.getText()));
 
         switch (v.getId()){
 
-            case R.id.btnCACalculate:
-                txtCAAnswer.setText("Cone Area: " +String.valueOf(ShapeFormulas.coneAreaFormula(radius, height)));
+            case R.id.btnCoACalculate:
+                txtCoAAnswer.setText("Cone Area: " +String.valueOf(ShapeFormulas.coneAreaFormula(radius, height)));
                 break;
-            case R.id.btnCABack:
-                Intent CABack = new Intent(this, Cone.class);
-                startActivity(CABack);
+            case R.id.btnCoABack:
+                Intent CoABack = new Intent(this, Cone.class);
+                startActivity(CoABack);
                 break;
         }
     }
